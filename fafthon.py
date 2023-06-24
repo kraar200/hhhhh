@@ -49,7 +49,7 @@ async def join_channel():
   try:
 	
    await fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
-await fafthon(functions.channels.JoinChannelRequest(channel='G8M8G'))
+await fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
  
 	except BaseException:
 	pass        
