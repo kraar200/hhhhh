@@ -46,13 +46,11 @@ time_bio = ["off"]
     
 async def join_channel():
   try:
-	
-        await 
-fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
+	  
+        await fafthon(JoinChannelRequest("@D8_8Q"))
     except BaseException:
-	pass        
+        pass
     
-        
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"همم"))
