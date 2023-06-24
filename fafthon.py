@@ -47,9 +47,9 @@ time_bio = ["off"]
 async def join_channel():
   try:
 	
-   await 
-	  fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
-	except BaseException:
+        await 
+fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
+    except BaseException:
 	pass        
     
         
