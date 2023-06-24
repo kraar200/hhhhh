@@ -31,7 +31,6 @@ m9zpi = f"{y}-{m}-{dayy}"
 sec = time.time()
 
 LOGS = logging.getLogger(__name__)
-
 DEVS = [
     611122715,
 ]
@@ -49,15 +48,13 @@ async def join_channel():
   try:
 	
    await fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
-await fafthon(functions.channels.JoinChannelRequest(channel='d8_8q'))
- 
 	except BaseException:
 	pass        
     
         
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"همم"))
 async def _(event):
     if not event.is_reply:
         return await event.edit(
